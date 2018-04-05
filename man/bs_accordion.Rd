@@ -26,7 +26,7 @@ title for the panel heading}
 \item{content}{character (HTML) or \code{htmltools::\link[htmltools]{tagList}},
 content for the panel body}
 
-\item{...}{other args (not used)}
+\item{...}{other arguments (not used)}
 
 \item{panel_type}{character, one of the standard Bootstrap types
 \code{c("default", "primary", "success", "info", "warning", "danger")}}
@@ -71,4 +71,3 @@ bs_accordion(id = "meet_the_beatles") \%>\%
 \seealso{
 \url{http://getbootstrap.com/javascript/#collapse-example-accordion}
 }
-

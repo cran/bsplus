@@ -15,7 +15,12 @@
 #'
 bs_attr <- function(x) UseMethod("bs_attr")
 
+# note - having to use @rawNamespace S3method(bs_attr,logical)
+#   because the S4 documentation is wiping out the S3 documentation
+#   TODO: build up a reproducible example and file an issue with roxygen
+
 #' @rdname bs_attr
+#' @rawNamespace S3method(bs_attr,default)
 #' @keywords internal
 #' @export
 bs_attr.default <- function(x){
@@ -26,6 +31,7 @@ bs_attr.default <- function(x){
 }
 
 #' @rdname bs_attr
+#' @rawNamespace S3method(bs_attr,logical)
 #' @keywords internal
 #' @export
 bs_attr.logical <- function(x){
@@ -36,25 +42,35 @@ bs_attr.logical <- function(x){
   x
 }
 
+#' @rdname bs_attr
+#' @rawNamespace S3method(bs_attr,Duration)
+#' @keywords internal
+#' @export
+bs_attr.Duration <- function(x) {
+  x <- x@.Data * 1000 # get ms
+  x <- bs_attr.default(x)
+
+  x
+}
+
 # S4 generic for converting to a bootstrap option
 
 #' @rdname bs_attr
 #' @keywords internal
 #' @export
-setGeneric("bs_attr", function(x) {
-  standardGeneric("bs_attr")
-})
+setGeneric("bs_attr", useAsDefault = bs_attr.default)
+
+#' @rdname bs_attr
+#' @keywords internal
+#' @export
+#'
+setMethod("bs_attr", list("logical"), bs_attr.logical)
 
 #' @rdname bs_attr
 #' @keywords internal
 #' @export
 #' @importClassesFrom lubridate Duration
-setMethod("bs_attr", list("Duration"), function(x){
-  x <- x@.Data * 1000 # get ms
-  x <- bs_attr.default(x)
-
-  x
-})
+setMethod("bs_attr", list("Duration"), bs_attr.Duration)
 
 # put in lubridate periods here, just because
 
@@ -101,9 +117,9 @@ bs_set_attr <- function(tag, .prefix = "data", ...){
 
 #' Sets Bootstrap data- and aria- attributes.
 #'
-#' Helper function to manage attributes for Bootstrap's Javascript components.
+#' Helper function to manage attributes for Bootstrap's JavaScript components.
 #'
-#' One of the mechanisms used by the API for Boostrap Javascript-components is
+#' One of the mechanisms used by the API for Boostrap JavaScript-components is
 #' an html elements' attributes. These attribute names are prefixed with
 #' \code{"data-"} or \code{"aria-"}, depending on the function.
 #'
@@ -143,7 +159,7 @@ bs_set_attr <- function(tag, .prefix = "data", ...){
 #'   bs_set_aria(expanded = FALSE)
 #' @export
 #'
-#' @seealso \href{http://getbootstrap.com/javascript}{Boostrap Javascript Components}
+#' @seealso \href{http://getbootstrap.com/javascript}{Bootstrap JavaScript Components}
 #
 bs_set_data <- function(tag, ...){
   bs_set_attr(tag, .prefix = "data", ...)

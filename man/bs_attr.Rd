@@ -3,9 +3,12 @@
 \docType{methods}
 \name{bs_attr}
 \alias{bs_attr}
-\alias{bs_attr,Duration-method}
 \alias{bs_attr.default}
 \alias{bs_attr.logical}
+\alias{bs_attr.Duration}
+\alias{bs_attr}
+\alias{bs_attr,logical-method}
+\alias{bs_attr,Duration-method}
 \title{Convert a value to be used as an html attribute}
 \usage{
 bs_attr(x)
@@ -14,7 +17,11 @@ bs_attr.default(x)
 
 bs_attr.logical(x)
 
+bs_attr.Duration(x)
+
 bs_attr(x)
+
+\S4method{bs_attr}{logical}(x)
 
 \S4method{bs_attr}{Duration}(x)
 }
@@ -32,4 +39,3 @@ character
 }
 }
 \keyword{internal}
-

@@ -2,9 +2,9 @@
 % Please edit documentation in R/accordion_sidebar.R, R/append.R, R/set_opts.R
 \name{bs_accordion_sidebar}
 \alias{bs_accordion_sidebar}
+\alias{use_bs_accordion_sidebar}
 \alias{bs_append.bsplus_accordion_sidebar}
 \alias{bs_set_opts.bsplus_accordion_sidebar}
-\alias{use_bs_accordion_sidebar}
 \title{Accordion-sidebar panel-group}
 \usage{
 bs_accordion_sidebar(id, spec_side = c(width = 4, offset = 0),
@@ -28,7 +28,7 @@ also serves as root id for panels appended using \code{bs_append()}}
 \item{spec_main}{numeric, column specification for main panels}
 
 \item{position}{character, indicates where to put the sidebar panels with
-repspect to the main panels}
+respect to the main panels}
 
 \item{tag}{\code{htmltools::\link[htmltools]{tag}},
 accordion-sidebar \code{<div/>} to which to append a panel}
@@ -42,7 +42,7 @@ content for the sidebar panel}
 \item{content_main}{character (HTML) or \code{htmltools::\link[htmltools]{tagList}},
 content for the main panel}
 
-\item{...}{other args (not used)}
+\item{...}{other arguments (not used)}
 
 \item{panel_type_active}{character, indicated bootstrap type for active-panel header,
 one of \code{c("default", "primary", "success", "info", "warning", "danger")}}
@@ -101,4 +101,3 @@ bs_accordion_sidebar(id = "meet_the_beatles") \%>\%
 use_bs_accordion_sidebar()
 }
 }
-

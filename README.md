@@ -1,11 +1,18 @@
 # bsplus
+
 [![Travis-CI Build Status](https://travis-ci.org/ijlyttle/bsplus.svg?branch=master)](https://travis-ci.org/ijlyttle/bsplus)
 [![Coverage Status](https://img.shields.io/codecov/c/github/ijlyttle/bsplus/master.svg)](https://codecov.io/github/ijlyttle/bsplus?branch=master)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/bsplus)](https://cran.r-project.org/package=plus)
+[![CRAN status](https://www.r-pkg.org/badges/version/bsplus)](https://cran.r-project.org/package=bsplus)
 
 ## Installation
 
-This package is not yet on CRAN. You can install the latest development version from GitHub with:
+You can install the latest released version from CRAN with:
+
+```
+install.packages("bsplus")
+```
+
+or the latest development version from GitHub with:
 
 ```R
 # install.packages("devtools")
