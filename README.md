@@ -1,8 +1,15 @@
-# bsplus
+---
+title: bsplus
+output: github_document
+---
 
-[![Travis-CI Build Status](https://travis-ci.org/ijlyttle/bsplus.svg?branch=master)](https://travis-ci.org/ijlyttle/bsplus)
-[![Coverage Status](https://img.shields.io/codecov/c/github/ijlyttle/bsplus/master.svg)](https://codecov.io/github/ijlyttle/bsplus?branch=master)
+<!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/bsplus)](https://cran.r-project.org/package=bsplus)
+[![R build status](https://github.com/ijlyttle/bsplus/workflows/R-CMD-check/badge.svg)](https://github.com/ijlyttle/bsplus/actions)
+[![Coverage Status](https://img.shields.io/codecov/c/github/ijlyttle/bsplus/master.svg)](https://codecov.io/github/ijlyttle/bsplus?branch=master)
+<!-- badges: end -->
+
+Please note that if you are viewing this page at this package's [pkgdown site](http://ijlyttle.github.io/bsplus), despite the "released" tag, this site represents a recent *development* version of this package. The most-recent version of the development package has its own [pkgdown site](http://ijlyttle.github.io/bsplus/dev). 
 
 ## Installation
 
@@ -21,11 +28,11 @@ devtools::install_github("ijlyttle/bsplus")
 
 ## Introduction
 
-To see all of this in action, you are referred to the [overview article](https://ijlyttle.github.io/bsplus/articles/overview.html) at this package's **pkgdown** site. 
+To see all of this in action, you are referred to the [getting-started article](http://ijlyttle.github.io/bsplus/articles/bsplus.html) at this package's **pkgdown** site. 
 
 The goals of this package are:
 
-- to provide a framework to use Bootstrap's JavaScript-markup API: http://getbootstrap.com/javascript/
+- to provide a framework to use Bootstrap's JavaScript-markup API: https://getbootstrap.com/docs/3.3/javascript/
 - to provide functions that work for both **rmarkdown** HTML documents and for **shiny** apps - the only exceptions are some functions that work with only the UI side of **shiny**.
 - to promote composition of HTML using pipes.
 
@@ -33,15 +40,15 @@ The goals of this package are:
 
 #### Accordion-sidebar
 
-This family of functions lets you build another dimension to your **shiny** apps, although you can still use it **rmarkdown** HTML documents. Rather than explain, you can see it demonstrated in a [**shiny** app](https://ijlyttle.shinyapps.io/tooltip_popover_modal/). If you would like some explanation, please see this [article](http://ijlyttle.github.io/bsplus/articles/accordion_sidebar.html).
+This family of functions lets you build another dimension to your **shiny** apps, although you can still use it **rmarkdown** HTML documents, explained further in this [article](http://ijlyttle.github.io/bsplus/articles/accordion_sidebar.html).
 
 #### Shiny-help links
 
-These functions make it easier to incorporate help-documentation into your **shiny** apps - functions for incorporating tooltips, popovers, and modals into the labels of **shiny** inputs. You can see this [**shiny** app](https://ijlyttle.shinyapps.io/tooltip_popover_modal/) for a demonstration, and this [article](http://ijlyttle.github.io/bsplus/articles/shiny_help_links.html) for some explanation.
+These functions make it easier to incorporate help-documentation into your **shiny** apps - functions for incorporating tooltips, popovers, and modals into the labels of **shiny** inputs, explained further in this [article](http://ijlyttle.github.io/bsplus/articles/shiny_help_links.html).
 
 #### Carousel
 
-A carousel is a [Boostrap JavaScript component](http://getbootstrap.com/javascript/#carousel) used to enclose a set of (typically) images, providing controls to move slides back-and-forth - as shown in this [article](https://ijlyttle.github.io/bsplus/articles/carousel.html). I think that this could be a more-useful tool if an "easy" way can be found to populate a carousel with images produced by [**gganimate**](https://github.com/dgrtwo/gganimate).
+A carousel is a [Boostrap JavaScript component](http://getbootstrap.com/javascript/#carousel) used to enclose a set of (typically) images, providing controls to move slides back-and-forth - as shown in this [article](https://ijlyttle.github.io/bsplus/articles/carousel.html). I think that this could be a more-useful tool if an "easy" way can be found to populate a carousel with images produced by [**gganimate**](https://github.com/thomasp85/gganimate).
 
 ### Function families 
 
@@ -99,4 +106,4 @@ This package draws inspiration from [**shinyBS**](https://ebailey78.github.io/sh
 
 ## Code of conduct
 
-Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](http://ijlyttle.github.io/bsplus/CONDUCT.html). By participating in this project you agree to abide by its terms.

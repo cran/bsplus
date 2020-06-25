@@ -4,32 +4,38 @@
 \alias{bs_panel}
 \title{Panel}
 \usage{
-bs_panel(id = NULL, panel_type = c("default", "primary", "success", "info",
-  "warning", "danger"), heading = NULL, body = NULL, ..., footer = NULL)
+bs_panel(
+  id = NULL,
+  panel_type = c("default", "primary", "success", "info", "warning", "danger"),
+  heading = NULL,
+  body = NULL,
+  ...,
+  footer = NULL
+)
 }
 \arguments{
 \item{id}{character, unique identifier}
 
 \item{panel_type}{character, one of the standard Bootstrap types}
 
-\item{heading}{character (HTML) or [htmltools::tagList()],
+\item{heading}{character (HTML) or \link[htmltools:tag]{htmltools::tagList()},
 content for the heading}
 
-\item{body}{character (HTML) or [htmltools::tagList()],
+\item{body}{character (HTML) or \link[htmltools:tag]{htmltools::tagList()},
 content for the body}
 
-\item{...}{character (HTML) or [htmltools::tagList()],
+\item{...}{character (HTML) or \link[htmltools:tag]{htmltools::tagList()},
 other content}
 
-\item{footer}{character (HTML) or [htmltools::tagList()],
+\item{footer}{character (HTML) or \link[htmltools:tag]{htmltools::tagList()},
 content for the footer}
 }
 \value{
-[htmltools::tag()], `<button/>`
+Object with S3 class, \code{shiny.tag}, \verb{<div/>}
 }
 \description{
 This function makes it a little easier to make Bootstrap-friendly panels;
-it wraps the [htmltools::tags()] function for panels
+it wraps \code{\link[htmltools:builder]{htmltools::tags}} for panels
 }
 \examples{
 library("htmltools")
@@ -41,5 +47,5 @@ bs_panel(
 )
 }
 \seealso{
-\url{http://getbootstrap.com/css/#panels}
+\url{http://getbootstrap.com/docs/3.3/css/#panels}
 }

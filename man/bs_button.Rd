@@ -4,27 +4,33 @@
 \alias{bs_button}
 \title{Button}
 \usage{
-bs_button(label, button_type = c("default", "primary", "success", "info",
-  "warning", "danger"), ...)
+bs_button(
+  label,
+  button_type = c("default", "primary", "success", "info", "warning", "danger"),
+  button_size = c("default", "large", "small", "extra-small"),
+  ...
+)
 }
 \arguments{
 \item{label}{character (HTML), button label}
 
 \item{button_type}{character, one of the standard Bootstrap types}
 
+\item{button_size}{character, size of the button}
+
 \item{...}{attributes (named arguments) and children (unnamed arguments)
-of the button, passed to \code{htmltools::\link[htmltools]{tag}}}
+of the button, passed to}
 }
 \value{
-\code{htmltools::\link[htmltools]{tag}}, \code{<button/>}
+Object with S3 class, \code{shiny.tag}, \verb{<button/>}.
 }
 \description{
 This function makes it a little easier to make Bootstrap-friendly buttons;
-it wraps the [htmltools::tags()] function for buttons.
+it wraps \code{\link[htmltools:builder]{htmltools::tags}} for buttons.
 }
 \examples{
-bs_button("Click me", button_type = "primary")
+bs_button("Click me", button_type = "primary", button_size = "small")
 }
 \seealso{
-\url{http://getbootstrap.com/css/#buttons}
+\url{http://getbootstrap.com/docs/3.3/css/#buttons}
 }

@@ -1,3 +1,13 @@
+# bsplus 0.1.2
+
+- adds `button_size` argument to `bs_button()` (#54)
+
+- adds `id` argument to `shiny_iconlink()` so that it can be "found" in the wild (#52)
+
+- adds support for lists in `bs_attr()` (#50)
+
+- version bump for development
+
 # bsplus 0.1.1
 
 - fixes an S3/S4 dispatch bug in `bs_attr()` (#34)

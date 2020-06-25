@@ -5,14 +5,13 @@
 \alias{use_bs_popover}
 \title{Popover}
 \usage{
-bs_embed_popover(tag, title = NULL, content = NULL, placement = "top",
-  ...)
+bs_embed_popover(tag, title = NULL, content = NULL, placement = "top", ...)
 
 use_bs_popover()
 }
 \arguments{
-\item{tag}{\code{htmltools::\link[htmltools]{tag}}, generally
-\code{<button/>} or \code{<a/>}, into which to embed the popover}
+\item{tag}{\verb{htmltools::[tag][htmltools::tag]}, generally
+\verb{<button/>} or \verb{<a/>}, into which to embed the popover}
 
 \item{title}{character, title for the popover, generally text}
 
@@ -23,7 +22,7 @@ use_bs_popover()
 \item{...}{other named arguments, passed to \code{bs_set_data()}}
 }
 \value{
-\code{htmltools::\link[htmltools]{tag}}, modified copy of \code{tag}
+\verb{htmltools::[tag][htmltools::tag]}, modified copy of \code{tag}
 }
 \description{
 A popover can be a useful way to add a somewhat-verbose explanation to a tag.
@@ -44,6 +43,6 @@ bs_button("A button") \%>\%
   bs_embed_popover(title = "I'm a popover", content = "Really!")
 }
 \seealso{
-\code{\link{bs_embed_tooltip}},
-  \url{http://getbootstrap.com/javascript/#popovers}
+\code{\link[=bs_embed_tooltip]{bs_embed_tooltip()}},
+\url{http://getbootstrap.com/docs/3.3/javascript/#popovers}
 }
