@@ -1,7 +1,7 @@
-f736ef5b349a082cdbafde1016466c9e *DESCRIPTION
-c9689bc472f5366f299eb20f3622ce47 *LICENSE
+f8fc6ab0324fa30a75680e5779f4fa07 *DESCRIPTION
+51153941d203090138c2735258b9d789 *LICENSE
 8a2dce6d32b91e4d99bd5fbecd7935b1 *NAMESPACE
-f78dff3e54f5fd6d59c6835b08da2caf *NEWS.md
+c5d2624bb16c96466cf5dab54f3bd53f *NEWS.md
 4c051fd1eba69f11ccec41c3734a2c35 *R/accordion.R
 30f2a125cded6f99b6834c1d159bf76b *R/accordion_sidebar.R
 ab67e9e660333a569f34dd357a7d7a3c *R/append.R
@@ -16,9 +16,9 @@ e30180c41b1370a80ce37cc2204e7600 *R/collapse.R
 0565fc1f61491b569ddc48062c2e3007 *R/set_attr.R
 9b6c49f5f0a8d8cd49127f51fa24b92f *R/set_opts.R
 a8af2afd8fe447e4a64a5c425c443313 *R/shiny.R
-59a87c5617fbeebe299f185111def452 *R/tidyverse.R
-f0d753d0a56325fbbb47dd85b5bb3f32 *R/utils.R
-027077f7195d419cf36121c3fd068bfa *README.md
+961842b6673f2dd092c2020aedb7f850 *R/tidyverse.R
+bb5e89c1daedb6c3dece0d2610aced19 *R/utils.R
+18296698b92d2f61935d4d3df932efbb *README.md
 1dda8afcb4966fa33d984109a5079f8e *inst/js/accordion_sidebar.js
 459ace7d3fd0e7b6119658a5c3942ea7 *inst/js/navbar_mod_shiny.js
 c83b47dffd8f4a51850ebb6a80f6a3c8 *inst/js/popover.js
@@ -48,7 +48,7 @@ a332db38f5006bacb33ddc0d1c7f926b *man/bs_carousel_image.Rd
 44bee5061cf79e61ee2fbb12cb4637e7 *man/bs_panel.Rd
 4c70c4a7c7b93ba570de57806c3a47c9 *man/bs_set_data.Rd
 c5423e56e9f7b14bab3d21dda53be339 *man/bs_set_opts.Rd
-9601c29834f1b543db753d271ca5b92c *man/pipe.Rd
+18dd4dd31d48de78663a6dd075a3c70d *man/pipe.Rd
 8cd4d08bfe0e3d178c8a0f3b9c4bcbe9 *man/render_html_fragment.Rd
 0964ca2e441bd6f27aa8a624e5e94571 *man/shinyInput_label_embed.Rd
 7c22c2d1ba292eefe2826a3c5612c1d0 *man/shiny_iconlink.Rd
@@ -60,6 +60,6 @@ d84ace482c6ada1ed5de71008006fb4f *tests/testthat/test-accordion.R
 ad6003a3677d5e1bb4be7820f0156665 *tests/testthat/test-collapse.R
 f62c6cfe5da502cf2cb87cd8df2c0842 *tests/testthat/test-modal.R
 3086862d380de8832115aecd3f3e8408 *tests/testthat/test-set_bs_attr.R
-74ac368b404978cc0d515ea4ac7f3567 *tests/testthat/test-shiny.R
+c5bc29b936b46d7a46d7acfa626b505f *tests/testthat/test-shiny.R
 b2326f2fc597f5214902c541c8b31a9e *tests/testthat/test-tooltip_popover.R
 d35c8b2734cee8ce9476cfa86cb2d8d0 *tests/testthat/test-utils.R
