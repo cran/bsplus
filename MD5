@@ -1,7 +1,7 @@
-f8fc6ab0324fa30a75680e5779f4fa07 *DESCRIPTION
+b21965ca1508c0652e685ad32a670d9c *DESCRIPTION
 51153941d203090138c2735258b9d789 *LICENSE
 8a2dce6d32b91e4d99bd5fbecd7935b1 *NAMESPACE
-c5d2624bb16c96466cf5dab54f3bd53f *NEWS.md
+7daa18c69c9e7696548c28ae14fbc5a7 *NEWS.md
 4c051fd1eba69f11ccec41c3734a2c35 *R/accordion.R
 30f2a125cded6f99b6834c1d159bf76b *R/accordion_sidebar.R
 ab67e9e660333a569f34dd357a7d7a3c *R/append.R
@@ -10,7 +10,7 @@ b0e2cdff7b75a242fa5086d65b423350 *R/carousel.R
 e30180c41b1370a80ce37cc2204e7600 *R/collapse.R
 6955f7ed91583c37c9f9120bacae7341 *R/embed_popover.R
 5f8754cdfa4974923b3349c3feef3fc2 *R/embed_tooltip.R
-556ece725d29ed2b069f49c021a6f266 *R/modal.R
+2e644536b189e968b09e08128aafb8f1 *R/modal.R
 60b46e5db4749b835729e45f363cd317 *R/panel.R
 620b8c6e874b98b8b98d9e0dcae99d9e *R/render_html_fragment.R
 0565fc1f61491b569ddc48062c2e3007 *R/set_attr.R
@@ -18,7 +18,7 @@ e30180c41b1370a80ce37cc2204e7600 *R/collapse.R
 a8af2afd8fe447e4a64a5c425c443313 *R/shiny.R
 961842b6673f2dd092c2020aedb7f850 *R/tidyverse.R
 bb5e89c1daedb6c3dece0d2610aced19 *R/utils.R
-18296698b92d2f61935d4d3df932efbb *README.md
+33cbee0170294afdf2e69e4ea5c9df7e *README.md
 1dda8afcb4966fa33d984109a5079f8e *inst/js/accordion_sidebar.js
 459ace7d3fd0e7b6119658a5c3942ea7 *inst/js/navbar_mod_shiny.js
 c83b47dffd8f4a51850ebb6a80f6a3c8 *inst/js/popover.js
@@ -44,7 +44,7 @@ a332db38f5006bacb33ddc0d1c7f926b *man/bs_carousel_image.Rd
 14111be328111e3a8cc0388a20313bc8 *man/bs_collapse.Rd
 724e86802cdd4b87e63cf95fb18a2f1a *man/bs_embed_popover.Rd
 65edf375c3c953cf4781b32ebac44fe5 *man/bs_embed_tooltip.Rd
-1b1f20db28fd2713813d288da3bb45c8 *man/bs_modal.Rd
+b4f2cd9c213b43ba7617c085bbd2ef63 *man/bs_modal.Rd
 44bee5061cf79e61ee2fbb12cb4637e7 *man/bs_panel.Rd
 4c70c4a7c7b93ba570de57806c3a47c9 *man/bs_set_data.Rd
 c5423e56e9f7b14bab3d21dda53be339 *man/bs_set_opts.Rd

@@ -1,3 +1,11 @@
+# bsplus 0.1.5
+
+- fix pkgdown warnings, add alt text to images (#120)
+
+- update GitHub Actions workflows (#118)
+
+- fix example to be explicit about only reading example data (#116)
+
 # bsplus 0.1.4
 
 - behind-the-scenes changes to remedy CRAN errors and notes
